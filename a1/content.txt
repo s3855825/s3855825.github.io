@@ -1,0 +1,91 @@
+I. Personal Information
+    1. Name
+        My name is Tran Minh Duc, student ID S3855825.
+    2. Student number
+
+    3. Email Address
+        You can contact me at S3855825@rmit.edu.vn
+    4. Background Information
+        I'm a first year student at RMIT, studying Information Technologies.
+    5. Fact
+
+
+II. Interest in IT
+    1. Interest in IT
+      - My interest in IT started when I 
+    2. Why RMIT
+      - I cannot get in any other school.
+    3. Expectation
+      - I expect a degree out of this school.
+
+III. Ideal Job
+    1. Job Posting
+    https://itviec.com/it-jobs/solution-architect-java-developer-fpt-software-2039?lab_feature=employer_job
+
+    2. Job Description
+    - The job
+
+    3. Skills Required
+
+    4. Current Skills
+    - Currently I have some experience working with OpenCV library in both Python and C++. I also have experience working with file system of Windows and some Linux distros in lower level.
+
+    5. Plan
+    - In the near future, by following school syllabus, I hope I can reach a certain level of skill in programming and design patterns, maybe pick up knowledge from some of the currently trending fields like Machine Learning.
+    - During my off time (not working on homework and school projects), I am currently and will keep solving competitive programming styled problems (I find these problems on LeetCode or HackerRanks). By solving these problems, I can practice applying basic data structures (heaps and queues, trees, graphs etc.) and algorithms
+
+IV. Personal Profile
+    1. Myer-Briggs 16 Personalities Test
+      - What the result means: The test says I have the Virtuoso personality. I learn by closely examining subjects and I'm naturally curious about things around me.
+      - Influence to my behaviour in a team: Since my test result suggests I am likely to sleep in and lose sight on my objectives, I need to 
+      learn to stay focus and finish my tasks as soon as possible.
+      - Choosing my team with the information: I need to look for people that can help me stay on schedule and focus on my current objective.
+
+    2 Learning style
+      - What the result means: 
+      - Influence to my behaviour in a team:
+      - Choosing my team with the information
+
+    3. Colour-coded Personalities Test
+      - What the result means:
+      - Influence to my behaviour in a team:
+      - Choosing my team with the information
+
+V. Project Idea
+    1. Overview
+    - My ideal project is a 2D rogue-like dungeon crawling game for multiple platforms. Players can take control of their own avatar, and navigate through the dangerous floors of a dungeon, collecting loots and treasures along the way. The game will be made using Unity, with my own sprites and music. I haven't made up a name for it yet.
+    - My inspiration for this game comes from Nethack, a 1987 rogue-like. While the game is dated in term of graphics, it is still popular among fans of the genre, mostly for the phrase "The Dev Team Thinks Of Everything" (if you think you are doing something clever and might break the game, the dev team most likely has already thought of it and written a message for that situation).
+
+    2. Motivation
+		- Before last semester, I only had a faint idea of game development. I know it requires a combination of math and physics, art, and programming, and each of these skill takes a lot of time to learn and apply into a video game. However, during the pandemic, I had the chance to try a free premium course offered by Unity, and I find out making video games is actually really interesting.
+    - When I started, my plan was to make a simple video game, one which I can finish in about 3-4 months. However, as I progress and learn more about game designing, I shift my interest more toward a rogue-like game, which is currently a really popular genre with examples like Darkest Dungeon or Rogue Legacy. This project does not need to become successful and monetizable, but I do wish it to reach a certain number of players.
+
+    3. Description
+    - The game is a rogue-like, meaning it has all the genre-defining characteristics:
+      + Death means game over, and progress in one playthrough will not carry over into the next.
+      + Player navigates through a procedurally generated dungeon.
+      + The game is turn-based, meaning the player will have to wait for their turn to carry out actions.
+
+    - On top of the mechanics described above, I also plan to implement a fog-of-war vision to the turn-based system:
+      + Fog-of-war vision means you cannot see pass a certain number of tiles.
+      + Once an object comes in to your vision, it will be added to the turn counter <img>turn_counter</img>
+    - This is not a top priority feature to be implemented, but it would be nice to have a timer system, eg. if you don't reach the end of the dungeon when the timer goes off, you lose. This will make for a more interesting game, forcing player to choose between fully explore a dungeon for more (and sometimes better) loot, and reaching the goal in allowed time.
+    - After implementing basic gameplay mechanics, I plan to add these as the development progress:
+      + Character classes: class-based mechanics combined with skills and equipment allow different play styles.
+      + Religion: forcing player to go for a pacifist play style or allow player to obliterate anything on their way.
+
+    4. Tools and Technologies
+		I intend to use the following tools to create the video games.
+			- Unity engine to build the game, and to create animations from sprites.
+			- C# programming language for scripting objects' behaviour.
+			- GIMP is a free image editing software, similar to Adobe Photoshop.
+
+    5. Skills Required
+		- Basic knowledge of programming, such as: OOP design (for example, both EnemyController and PlayerController can be classes derived from the same MovingObject parent class).
+		- Knowledge about design pattern is also required. Singleton, for example, is a common to decide functionality of different game objects.
+		- Since the game genres include rogue-like, it involves a lot of procedural generations techniques. For example, binary space partitioning tree, an algorithm to divide space into partitions, can be used to generate rooms and corridors on a dungeon floor.
+    - World building skills: on the list of required skills, this is the only skill I have no experience. Since most rogue-like games also have traditional RPG elements, including lore and flavour texts, world building skill is definitely needed create an immersive world.
+
+    6. Outcome
+    - While the first video game may not be monetizable, it stills brings experience for the next projects.
+    - Experience with applying design patterns will be extremely valuable for software engineering jobs later.
