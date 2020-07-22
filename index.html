@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'aboutme')" id="defaultOpen">About Me</button>
+    <button class="tablinks" onclick="openTab(event, 'interest')">My Interest in IT</button>
+    <button class="tablinks" onclick="openTab(event, 'job')">Ideal Job</button>
+    <button class="tablinks" onclick="openTab(event, 'profile')">Personal Profile</button>
+    <button class="tablinks" onclick="openTab(event, 'project')">Project Idea</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="aboutme" class="tabcontent">
+    <h3>About Me</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div id="interest" class="tabcontent">
+    <h3>Interest in IT</h3>
+    <h3>Why RMIT</h3>
+    <h3>Expectation</h3>
+  </div>
+
+  <div id="job" class="tabcontent">
+    <h3>Job Posting</h3>
+    <h3>Job Description</h3>
+    <h3>Skills Required</h3>
+    <h3>Current Skill</h3>
+    <h3>My Plan</h3>
+  </div>
+
+  <div id="profile" class="tabcontent">
+    <h3>Myer-Briggs Personality Test Result</h3>
+    <h3>Learning Style Test Result</h3>
+    <h3>Colour-Coded Personality Test Result</h3>
+  </div>
+
+  <div id="project" class="tabcontent">
+    <h3>Overview</h3>
+    <div>
+      <ul>
+        <li>
+          My ideal project is a 2D rogue-like dungeon crawling game for multiple platforms. Players can take control of their own avatar, and navigate through the dangerous floors of a dungeon, collecting loots and treasures along the way. The game will be made using Unity, with my own sprites and music. I haven't made up a name for it yet.
+        </li>
+        <li>
+          My inspiration for this game comes from Nethack, a 1987 rogue-like. While the game is dated in term of graphics, it is still popular among fans of the genre, mostly for the phrase "The Dev Team Thinks Of Everything" (if you think you are doing something clever and might break the game, the dev team most likely has already thought of it and written a message for that situation).
+        </li>
+      </ul>  
+    </div>
+    
+    <h3>Motivation</h3>
+    <div>
+      <ul>
+        <li>
+          Before last semester, I only had a faint idea of game development. I know it requires a combination of math and physics, art, and programming, and each of these skill takes a lot of time to learn and apply into a video game. However, during the pandemic, I had the chance to try a free premium course offered by Unity, and I find out making video games is actually really interesting.
+        </li>
+        <li>
+          When I started, my plan was to make a simple video game, one which I can finish in about 3-4 months. However, as I progress and learn more about game designing, I shift my interest more toward a rogue-like game, which is currently a really popular genre with examples like Darkest Dungeon or Rogue Legacy. This project does not need to become successful and monetizable, but I do wish it to reach a certain number of players.
+        </li>
+      </ul>  
+    </div>
+
+    <h3>Project Description</h3>
+      <div>
+        <ul>
+          <li>
+            The game is a rogue-like, meaning it has all the genre-defining characteristics:
+            <ul>
+              <li>
+                Death means game over, and progress in one playthrough will not carry over into the next.
+              </li>
+              <li>
+                Player navigates through a procedurally generated dungeon.
+              </li>
+              <li>
+                The game is turn-based, meaning the player will have to wait for their turn to carry out actions.
+              </li>
+            </ul>
+          </li>
+          <li>
+            On top of the mechanics described above, I also plan to implement a fog-of-war vision to the turn-based system:
+            <ul>
+              <li>
+                Fog-of-war vision means you cannot see pass a certain number of tiles.
+              </li>
+              <li>
+                Once an object comes in to your vision, it will be added to the turn counter <!-- img>turn_counter</img -->
+              </li>
+            </ul>
+          </li>
+          <li>
+            This is not a top priority feature to be implemented, but it would be nice to have a timer system, eg. if you don't reach the end of the dungeon when the timer goes off, you lose. This will make for a more interesting game, forcing player to choose between fully explore a dungeon for more (and sometimes better) loot, and reaching the goal in allowed time.
+          </li>
+          <li>
+            After implementing basic gameplay mechanics, I plan to add these as the development progress:
+            <ul>
+              <li>
+                Character classes: class-based mechanics combined with skills and equipment allow different play styles.
+              </li>
+              <li>
+                Religion: forcing player to go for a pacifist play style or allow player to obliterate anything on their way.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    <h3>Tools and Technologies Involved</h3>
+      <div>
+        I intend to use the following tools to create the video games.
+        <ul>
+          <li>
+            Unity engine to build the game, and to create animations from sprites.
+          </li>
+          <li>
+            C# programming language for scripting objects' behaviour.
+          </li>
+          <li>
+            GIMP is a free image editing software, similar to Adobe Photoshop.
+          </li>
+        </ul>
+      </div>
+
+    <h3>Skills Required</h3>
+      <div>
+        <ul>
+          <li>Basic knowledge of programming, such as: OOP design (for example, both EnemyController and PlayerController can be classes derived from the same MovingObject parent class).</li>
+          <li>Knowledge about design pattern is also required. Singleton, for example, is a common to decide functionality of different game objects.</li>
+          <li>Since the game genres include rogue-like, it involves a lot of procedural generations techniques. For example, binary space partitioning tree, an algorithm to divide space into partitions, can be used to generate rooms and corridors on a dungeon floor.</li>
+          <li>World building skills: on the list of required skills, this is the only skill I have no experience. Since most rogue-like games also have traditional RPG elements, including lore and flavour texts, world building skill is definitely needed create an immersive world.</li>
+        </ul>
+      </div>
+
+    <h3>Outcome</h3>
+      <div>
+        <ul>
+          <li>
+            While the first video game may not be monetizable, it stills brings experience for the next projects.
+          </li>
+          <li>
+            Experience with applying design patterns will be extremely valuable for software engineering jobs later.
+          </li>
+        </ul>
+      </div>  
+
+  </div>
+</body>
+
+</html>
