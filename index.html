@@ -1,71 +1,193 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body onload="document.getElementById('defaultOpen').click();">
+<body onload="document.getElementById('defaultOpenProfile').click();">
   <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'aboutme')" id="defaultOpen">About Me</button>
+    <button class="tablinks" onclick="openTab(event, 'aboutme')" id="defaultOpenProfile">About Me</button>
     <button class="tablinks" onclick="openTab(event, 'interest')">My Interest in IT</button>
     <button class="tablinks" onclick="openTab(event, 'job')">Ideal Job</button>
-    <button class="tablinks" onclick="openTab(event, 'profile')">Personal Profile</button>
+    <button class="tablinks" onclick="openTab(event, 'myerbriggs')">Myer Briggs Personality Test</button>
+    <button class="tablinks" onclick="openTab(event, 'learning')">Online Learning Style Test</button>
+    <button class="tablinks" onclick="openTab(event, 'colour')">Colour Personality Test</button>
     <button class="tablinks" onclick="openTab(event, 'project')">Project Idea</button>
   </div>
 
   <!-- Tab content -->
   <div id="aboutme" class="tabcontent">
     <h3>About Me</h3>
+
+    <img src="media/profile.jpg" width="200" />
     <p>My name is Tran Minh Duc, student ID S3855825. You can contact me at my email s3855825@rmit.edu.vn</p>
     <p>I'm a first year student, studying Information Technology.</p>
-    <p>I'm interested in making an extremely convoluted software, to the point of being unnecessarily complicated. People often mistake complex for convoluted, </p>
+    <p>I'm interested in making video games.</p>
   </div>
 
   <div id="interest" class="tabcontent">
     <h3>Interest in IT</h3>
-    <p> My interest in IT started in middle school, when I was first introduced to programming in Pascal. I just knew I like it. However, it was not until the second year of highschool that I started to actually learn programming and finished my first program. It was a tic-tac-toe with complete AI, but since I did not know how to make a GUI at the time, every move will be printed on a new board in the terminal.</p>
+    <p> My interest in IT started in middle school, when I was first introduced to programming in Pascal. I just knew I
+      like it. However, it was not until the second year of highschool that I started to actually learn programming and
+      finished my first program. It was a tic-tac-toe with complete AI, but since I did not know how to make a GUI at
+      the time, every move will be printed on a new board in the terminal.</p>
 
     <h3>Why RMIT</h3>
-    <p>The IT program at RMIT only takes 3 years, and that includes an internship. Compared to other local universities, I can graduate one year ealier and already have some working experience when I join the industry.</p>
+    <p>The IT program at RMIT only takes 3 years, and that includes an internship. Compared to other local universities,
+      I can graduate one year ealier and already have some working experience when I join the industry.</p>
 
     <h3>Expectation</h3>
-    <p>To be honest, I do not have a realistic expectation at the moment. I will keep learning as much as I can here and hope for the best.</p>
+    <p>To be honest, I do not have a realistic expectation at the moment. I will keep learning as much as I can here and
+      hope for the best.</p>
   </div>
 
   <div id="job" class="tabcontent">
     <h3>Job Posting</h3>
-    <a href="https://ca.indeed.com/viewjob?jk=8ea2724644337837&tk=1edtgqpru2vu6000&from=serp&vjs=3">Here's the link to the job advertisement.</a>
-    
+    <a href="https://ca.indeed.com/viewjob?jk=8ea2724644337837&tk=1edtgqpru2vu6000&from=serp&vjs=3">Here's the link to
+      the job advertisement.</a>
+
     <h3>Job Description</h3>
-    <p>The advertisement is looking for a Solution Architect (SA) at MasterCard. The role of SAs in a team is to bring a project from planning table to the final product. Specifically, for this job at MasterCard, they are looking for engineers to build " high volume transaction processing system, web applications for managing fraud solutions and fraud events, APIs for exposing capabilities to customers, and vendor solutions for business rules management and fraud scoring".</p>
+    <p>The advertisement is looking for a Solution Architect (SA) at MasterCard. The role of SAs in a team is to bring a
+      project from planning table to the final product. Specifically, for this job at MasterCard, they are looking for
+      engineers to build " high volume transaction processing system, web applications for managing fraud solutions and
+      fraud events, APIs for exposing capabilities to customers, and vendor solutions for business rules management and
+      fraud scoring".</p>
 
     <h3>Skills Required</h3>
-    <p>The job requires experience in working with and building large system at application architecture level. While the amount of experience is not explicitly mentioned, I believe they are looking for people with around 6 years of experience or above.</p>
-    <p>In term of technical requirement, the job requires depth in Java, Linux and Oracle. Since SA is also a senior role, candidates also have to be experienced with software development process.</p>
-    <p>A Solution Architect also needs to have great communication skill. They also need to have leader capability, to provide techincal leadership across organization.</p>
+    <p>The job requires experience in working with and building large system at application architecture level. While
+      the amount of experience is not explicitly mentioned, I believe they are looking for people with around 6 years of
+      experience or above.</p>
+    <p>In term of technical requirement, the job requires depth in Java, Linux and Oracle. Since SA is also a senior
+      role, candidates also have to be experienced with software development process.</p>
+    <p>A Solution Architect also needs to have great communication skill. They also need to have leader capability, to
+      provide techincal leadership across organization.</p>
 
     <h3>Current Skill</h3>
-    <p>Sadly, I have none of skill required at the moment. I have some experience with writing unit test and building small web applications. I am also familiar with Scrum methodology.
+    <p>Sadly, I have none of skill required at the moment. I have some experience with writing unit test and building
+      small web applications. I am also familiar with Scrum methodology.
     </p>
 
     <h3>My Plan</h3>
-    <p>I need to take classes in programming, . Aside from my full time education, I also need to invest in building projects. I also need to find an internship at a large company, where I can be allowed to me to be mentored in designing real-world application that actually works.</p>
-    <p>After graduation, my first job ideally would be to work in a smaller team at a large technical company as a software engineer. This would allow me to take on more responsibilities while working with more experienced engineer. In the next job, I would need to build up experience in building and managing database.</p>
-    
+    <p>I need to take classes in programming, . Aside from my full time education, I also need to invest in building
+      projects. I also need to find an internship at a large company, where I can be allowed to me to be mentored in
+      designing real-world application that actually works.</p>
+    <p>After graduation, my first job ideally would be to work in a smaller team at a large technical company as a
+      software engineer. This would allow me to take on more responsibilities while working with more experienced
+      engineer. In the next job, I would need to build up experience in building and managing database.</p>
+
   </div>
 
-  <div id="profile" class="tabcontent">
-    <h3>Myer-Briggs Personality Test Result</h3>
-    <div></div>
+  <div id="myerbriggs" class="tabcontent">
+    <div class="row">
+      <div class="column-left">
+        <div class="content">
+          <img src="media/16personality.PNG" width="300">
+        </div>
+      </div>
+      <div class="column-right">
+        <div class="content">
+          <ul>
+            <li>What do the results of these tests mean for you?
+              <ul>
+                <li>Since I looked up some of the personality types before taking this test, I'm not surprised with the
+                  result. I definitely have introvert tendencies and I would prefer exploring ideas through
+                  experimenting. I also agree with the result that I am normally well-liked by my classmates and
+                  colleagues.</li>
+              </ul>
+            </li>
 
-    <h3>Learning Style Test Result</h3>
-    <div></div>
+            <li>How do you think these results may influence your behaviour in a team?
+              <ul>
+                <li>In a team, most of the time I will probably function as a "fixer", meaning someone who can stay and
+                  help when something goes wrong with my team's project. Given the listed strength, which are "great in
+                  crisis", "practical", and "know how to prioritize", these traits would prove to be extremely useful in
+                  emergency situations (errors occur the day before deadline, etc.) if the result is to be trusted.
+                  However, this result definitely needs to be tested in real situations.</li>
+              </ul>
+            </li>
 
-    <h3>Colour-Coded Personality Test Result</h3>
-    <div></div>
-    
+            <li>How should you take this into account when forming a team?
+              <ul>
+                <li>Since the result lists being private and commitment-aversed, I need to find teammates who can
+                  motivate and keep me disciplined. Given the fact that I do not enjoy being in the limelight and just
+                  work behind the scene, someone with an extrovert tendency would be a great option for teammate. To be
+                  more specific, I think I would get along well with someone of the Protagonist or Commander type of
+                  personality.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="learning" class="tabcontent">
+    <div class="row">
+      <div class="column-left">
+        <div class="content">
+          <img src="media/learning.PNG" width="600">
+        </div>
+      </div>
+      <div class="column-right">
+        <div class="content">
+          <ul>
+            <li>What do the results of these tests mean for you?
+              <ul>
+                <li>While it does not suprise me that I'm a primary visual learner, I find it interesting that I rely less on audio clues than I thought. Since I cannot effectively filter out background noises when I study, I actually found a way to cope with it and manage to stay focused with more audible background noises. Before taking this test, I thought my learning style would be quite balanced between auditory and visual methods.</li>
+              </ul>
+            </li>
+
+            <li>How do you think these results may influence your behaviour in a team?
+              <ul>
+                <li>This test does not really say a lot about my behaviour in a team setting. I can imagine only one aspect it may affect, which is how I explain processes to my teammates. Since taking the test, I have noticed how I prefer to draw illustrations for concepts and flow charts for processes when I try to explain them to other people. Given this information, I can also ask for visual representations from my team when I have trouble in communicating and understanding them.</li>
+              </ul>
+            </li>
+
+            <li>How should you take this into account when forming a team?
+              <ul>
+                <li>From the test result, I primarily rely on visual clues to learn, not so much from audio sources. I'm even easily distracted by background noises. Given this information, having a teammate who is an auditory learner would cover my weaknesses. Even more so, being paired with auditory learners means our learning styles actually complement each other and make for an effective team.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="colour" class="tabcontent">
+    <div class="row">
+      <div class="column-left">
+        <div class="image-content">
+          <img src="media/whiteShare.png" width="500">
+        </div>
+      </div>
+      <div class="column-right">
+        <div class="text-content">
+          <ul>
+            <li>What do the results of these tests mean for you?
+              <ul>
+                <li>I learn alot about how other perceive my personality type from the result of this test. This test is used in new employee evaluation at one of the largest corporation in South East Asia, so I think there is some credibility behind it. Being sorted as White personality actually fit with the results of the Myer Briggs test, as I tend to be socially reserved and prefer to work alone most of the time.</li>
+              </ul>
+            </li>
+
+            <li>How do you think these results may influence your behaviour in a team?
+              <ul>
+                <li>While this test provides excellent guideline to interact with my personality type, it does not explicitly say much about how I, as an individual, should approach others. Fortunately, this test divides personalities in to onlyfour groups, so I can learn how people from other groups expect to be treated, and act accordingly.</li>
+              </ul>
+            </li>
+
+            <li>How should you take this into account when forming a team?
+              <ul>
+                <li>Since people can adapt their behaviour in a group setting, so realistically, I don't need to take the test result into account when I find teammates for group work. However, while working together, I would definitely make effort to get along well with other members, and to make sure they know what to expect when working with me.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="project" class="tabcontent">
@@ -73,108 +195,132 @@
     <div>
       <ul>
         <li>
-          My ideal project is a 2D rogue-like dungeon crawling game for multiple platforms. Players can take control of their own avatar, and navigate through the dangerous floors of a dungeon, collecting loots and treasures along the way. The game will be made using Unity, with my own sprites and music. I haven't made up a name for it yet.
+          My ideal project is a 2D rogue-like dungeon crawling game for multiple platforms. Players can take control of
+          their own avatar, and navigate through the dangerous floors of a dungeon, collecting loots and treasures along
+          the way. The game will be made using Unity, with my own sprites and music. I haven't made up a name for it
+          yet.
         </li>
         <li>
-          My inspiration for this game comes from Nethack, a 1987 rogue-like. While the game is dated in term of graphics, it is still popular among fans of the genre, mostly for the phrase "The Dev Team Thinks Of Everything" (if you think you are doing something clever and might break the game, the dev team most likely has already thought of it and written a message for that situation).
+          My inspiration for this game comes from Nethack, a 1987 rogue-like. While the game is dated in term of
+          graphics, it is still popular among fans of the genre, mostly for the phrase "The Dev Team Thinks Of
+          Everything" (if you think you are doing something clever and might break the game, the dev team most likely
+          has already thought of it and written a message for that situation).
         </li>
-      </ul>  
+      </ul>
     </div>
-    
+
     <h3>Motivation</h3>
     <div>
       <ul>
         <li>
-          Before last semester, I only had a faint idea of game development. I know it requires a combination of math and physics, art, and programming, and each of these skill takes a lot of time to learn and apply into a video game. However, during the pandemic, I had the chance to try a free premium course offered by Unity, and I find out making video games is actually really interesting.
+          Before last semester, I only had a faint idea of game development. I know it requires a combination of math
+          and physics, art, and programming, and each of these skill takes a lot of time to learn and apply into a video
+          game. However, during the pandemic, I had the chance to try a free premium course offered by Unity, and I find
+          out making video games is actually really interesting.
         </li>
         <li>
-          When I started, my plan was to make a simple video game, one which I can finish in about 3-4 months. However, as I progress and learn more about game designing, I shift my interest more toward a rogue-like game, which is currently a really popular genre with examples like Darkest Dungeon or Rogue Legacy. This project does not need to become successful and monetizable, but I do wish it to reach a certain number of players.
+          When I started, my plan was to make a simple video game, one which I can finish in about 3-4 months. However,
+          as I progress and learn more about game designing, I shift my interest more toward a rogue-like game, which is
+          currently a really popular genre with examples like Darkest Dungeon or Rogue Legacy. This project does not
+          need to become successful and monetizable, but I do wish it to reach a certain number of players.
         </li>
-      </ul>  
+      </ul>
     </div>
 
     <h3>Project Description</h3>
-      <div>
-        <ul>
-          <li>
-            The game is a rogue-like, meaning it has all the genre-defining characteristics:
-            <ul>
-              <li>
-                Death means game over, and progress in one playthrough will not carry over into the next.
-              </li>
-              <li>
-                Player navigates through a procedurally generated dungeon.
-              </li>
-              <li>
-                The game is turn-based, meaning the player will have to wait for their turn to carry out actions.
-              </li>
-            </ul>
-          </li>
-          <li>
-            On top of the mechanics described above, I also plan to implement a fog-of-war vision to the turn-based system:
-            <ul>
-              <li>
-                Fog-of-war vision means you cannot see pass a certain number of tiles.
-              </li>
-              <li>
-                Once an object comes in to your vision, it will be added to the turn counter <!-- img>turn_counter</img -->
-              </li>
-            </ul>
-          </li>
-          <li>
-            This is not a top priority feature to be implemented, but it would be nice to have a timer system, eg. if you don't reach the end of the dungeon when the timer goes off, you lose. This will make for a more interesting game, forcing player to choose between fully explore a dungeon for more (and sometimes better) loot, and reaching the goal in allowed time.
-          </li>
-          <li>
-            After implementing basic gameplay mechanics, I plan to add these as the development progress:
-            <ul>
-              <li>
-                Character classes: class-based mechanics combined with skills and equipment allow different play styles.
-              </li>
-              <li>
-                Religion: forcing player to go for a pacifist play style or allow player to obliterate anything on their way.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <div>
+      <ul>
+        <li>
+          The game is a rogue-like, meaning it has all the genre-defining characteristics:
+          <ul>
+            <li>
+              Death means game over, and progress in one playthrough will not carry over into the next.
+            </li>
+            <li>
+              Player navigates through a procedurally generated dungeon.
+            </li>
+            <li>
+              The game is turn-based, meaning the player will have to wait for their turn to carry out actions.
+            </li>
+          </ul>
+        </li>
+        <li>
+          On top of the mechanics described above, I also plan to implement a fog-of-war vision to the turn-based
+          system:
+          <ul>
+            <li>
+              Fog-of-war vision means you cannot see pass a certain number of tiles.
+            </li>
+            <li>
+              Once an object comes in to your vision, it will be added to the turn counter
+              <!-- img>turn_counter</img -->
+            </li>
+          </ul>
+        </li>
+        <li>
+          This is not a top priority feature to be implemented, but it would be nice to have a timer system, eg. if you
+          don't reach the end of the dungeon when the timer goes off, you lose. This will make for a more interesting
+          game, forcing player to choose between fully explore a dungeon for more (and sometimes better) loot, and
+          reaching the goal in allowed time.
+        </li>
+        <li>
+          After implementing basic gameplay mechanics, I plan to add these as the development progress:
+          <ul>
+            <li>
+              Character classes: class-based mechanics combined with skills and equipment allow different play styles.
+            </li>
+            <li>
+              Religion: forcing player to go for a pacifist play style or allow player to obliterate anything on their
+              way.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
     <h3>Tools and Technologies Involved</h3>
-      <div>
-        I intend to use the following tools to create the video games.
-        <ul>
-          <li>
-            Unity engine to build the game, and to create animations from sprites.
-          </li>
-          <li>
-            C# programming language for scripting objects' behaviour.
-          </li>
-          <li>
-            GIMP is a free image editing software, similar to Adobe Photoshop.
-          </li>
-        </ul>
-      </div>
+    <div>
+      I intend to use the following tools to create the video games.
+      <ul>
+        <li>
+          Unity engine to build the game, and to create animations from sprites.
+        </li>
+        <li>
+          C# programming language for scripting objects' behaviour.
+        </li>
+        <li>
+          GIMP is a free image editing software, similar to Adobe Photoshop.
+        </li>
+      </ul>
+    </div>
 
     <h3>Skills Required</h3>
-      <div>
-        <ul>
-          <li>Basic knowledge of programming, such as: OOP design (for example, both EnemyController and PlayerController can be classes derived from the same MovingObject parent class).</li>
-          <li>Knowledge about design pattern is also required. Singleton, for example, is a common to decide functionality of different game objects.</li>
-          <li>Since the game genres include rogue-like, it involves a lot of procedural generations techniques. For example, binary space partitioning tree, an algorithm to divide space into partitions, can be used to generate rooms and corridors on a dungeon floor.</li>
-          <li>World building skills: on the list of required skills, this is the only skill I have no experience. Since most rogue-like games also have traditional RPG elements, including lore and flavour texts, world building skill is definitely needed create an immersive world.</li>
-        </ul>
-      </div>
+    <div>
+      <ul>
+        <li>Basic knowledge of programming, such as: OOP design (for example, both EnemyController and PlayerController
+          can be classes derived from the same MovingObject parent class).</li>
+        <li>Knowledge about design pattern is also required. Singleton, for example, is a common to decide functionality
+          of different game objects.</li>
+        <li>Since the game genres include rogue-like, it involves a lot of procedural generations techniques. For
+          example, binary space partitioning tree, an algorithm to divide space into partitions, can be used to generate
+          rooms and corridors on a dungeon floor.</li>
+        <li>World building skills: on the list of required skills, this is the only skill I have no experience. Since
+          most rogue-like games also have traditional RPG elements, including lore and flavour texts, world building
+          skill is definitely needed create an immersive world.</li>
+      </ul>
+    </div>
 
     <h3>Outcome</h3>
-      <div>
-        <ul>
-          <li>
-            While the first video game may not be monetizable, it stills brings experience for the next projects.
-          </li>
-          <li>
-            Experience with applying design patterns will be extremely valuable for software engineering jobs later.
-          </li>
-        </ul>
-      </div>  
+    <div>
+      <ul>
+        <li>
+          While the first video game may not be monetizable, it stills brings experience for the next projects.
+        </li>
+        <li>
+          Experience with applying design patterns will be extremely valuable for software engineering jobs later.
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 
