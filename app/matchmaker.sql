@@ -5,26 +5,26 @@ CREATE TABLE IF NOT EXISTS Students (
 );
 
 CREATE TABLE IF NOT EXISTS Waitlists (
-    id INT PRIMARY KEY,
+    waitlist_id INT PRIMARY KEY,
     student_id VARCHAR(7),
     FOREIGN KEY (student_id)
         REFERENCES Students (student_id)
 );
 
 CREATE TABLE IF NOT EXISTS Posts (
-    id INT PRIMARY KEY,
+    post_id INT PRIMARY KEY,
     message VARCHAR(140),
     waitlist_id INT,
     poster_id VARCHAR(7),
     url VARCHAR(50),
     FOREIGN KEY (waitlist_id)
-        REFERENCES Waitlists (id),
+        REFERENCES Waitlists (waitlist_id),
     FOREIGN KEY (poster_id)
         REFERENCES Students (student_id)
 );
 
 CREATE TABLE IF NOT EXISTS Courses (
-    id INT PRIMARY KEY,
+    course_id INT PRIMARY KEY,
     course_code VARCHAR(10),
     course_name VARCHAR(20)
 );
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS CoursesTaken (
     FOREIGN KEY (student_id)
         REFERENCES Students (student_id),
     FOREIGN KEY (course_id)
-        REFERENCES Courses (id)
+        REFERENCES Courses (course_id)
 );
 
 CREATE TABLE IF NOT EXISTS Review (
